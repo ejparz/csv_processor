@@ -12,7 +12,7 @@ class TestLoadCsv(unittest.TestCase):
 
         csvLoader = CsvLoader()
         data = csvLoader.getCsv(filePath)
-        assert data != None
+        self.assertTrue(len(data) > 10)
 
 
         

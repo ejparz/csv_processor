@@ -6,4 +6,7 @@ class CsvLoader(object):
         ""
     
     def getCsv(self, path: str):
-        return pd.read_csv(path) 
+        return pd.read_csv(path, encoding ='latin1') 
+    
+    def writeDataFrameToCsv(self, df: pd.DataFrame, path: str):
+        df.to_csv(path)
