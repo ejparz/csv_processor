@@ -7,7 +7,7 @@ import os
 
 class TestLoadCsv(unittest.TestCase):
     def test_process(self):
-		print(self)
+        print(self)
         p = ProcessorSvc()
         p.processCsv()
         
