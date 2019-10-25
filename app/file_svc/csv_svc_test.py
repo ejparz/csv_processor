@@ -1,5 +1,5 @@
 import unittest
-from app.csv.csv_loader import CsvLoader
+from app.file_svc.csv_svc import CsvLoader
 import os
 
 class TestLoadCsv(unittest.TestCase):
