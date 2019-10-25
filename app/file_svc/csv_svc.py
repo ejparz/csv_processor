@@ -1,6 +1,6 @@
 import pandas as pd
 
-class CsvLoader(object):
+class CsvSvc(object):
 
     def __init__(self):
         ""
