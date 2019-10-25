@@ -5,6 +5,7 @@ import os
 
 class TestLoadCsv(unittest.TestCase):
     def test_format_category(self):
+        print(self)
         # initialize list of lists 
         data = [['Boomer', 10], ['Max', 15], ['Noodle', 14]] 
         
