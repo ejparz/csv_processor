@@ -15,7 +15,7 @@ class ProcessorSvc(object):
         filePath = os.path.join(currentDir, '../../data/test_data.csv')
 
         data = self.csvSvc.getCsv(filePath)
-        formatted = self.formatterSvc.formatCategoryColumn(data)
+        formatted = self.formatterSvc.formatXcmFile(data)
 
         filePathToWrite = os.path.join(currentDir, '../../test_data/processor_output.csv')
         self.csvSvc.writeDataFrameToCsv(formatted, filePathToWrite)

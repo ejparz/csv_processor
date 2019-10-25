@@ -19,5 +19,6 @@ class TestLoadCsv(unittest.TestCase):
 
         print(data)
         self.assertTrue(len(data) > 10)
+        self.assertEqual(data["Category"].iloc[0], "Boomer was here")
 
  
